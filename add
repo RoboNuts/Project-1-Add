@@ -1,0 +1,22 @@
+class ProblemSolver: 
+    def __init__(self, number_1,number_2):
+        self.number_1 = number_1 #integrated inputed number
+        self.number_2 = number_2 #integrated inputed number
+    
+    def print_info(self):
+        print('.') #spacing
+        print('.') 
+        print('.')
+        print('.')
+        print(f'First Number: {self.number_1}') #prints first number after inputs are complete 
+        print(f'Second Number: {self.number_2}') #prints second number
+        
+
+
+number_1 = int(input('*Enter First Number: ')) #input; 
+number_2 = int(input('*Enter Second Number: ')) #input
+calculate = number_1 + number_2 #actual calulation part
+
+ps = ProblemSolver(number_1, number_2) 
+ps.print_info() #prints the info we have provided
+print(f'Answer: {calculate}') #prints the result
